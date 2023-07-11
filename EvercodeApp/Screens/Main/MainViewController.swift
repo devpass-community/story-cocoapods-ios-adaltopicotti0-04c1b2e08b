@@ -1,9 +1,9 @@
 import UIKit
+import Kingfisher
 
 final class MainViewController: UIViewController {
     
     lazy var imageView: UIImageView = {
-        
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
@@ -25,5 +25,7 @@ final class MainViewController: UIViewController {
     
     func loadImage() {
         
+        let url = URL(string: "https://devpass-api-bucket.s3.amazonaws.com/logo/evercode-logo.png")
+        imageView.kf.setImage(with: url)
     }
 }
