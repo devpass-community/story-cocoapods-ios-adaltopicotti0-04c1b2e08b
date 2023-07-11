@@ -4,6 +4,7 @@ import Kingfisher
 final class MainViewController: UIViewController {
     
     lazy var imageView: UIImageView = {
+        
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
